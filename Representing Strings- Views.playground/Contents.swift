@@ -33,11 +33,13 @@ print(Array(cafe.unicodeScalars))
 print(cafe.unicodeScalars.map { $0.value })
 // Prints "[67, 97, 102, 101, 769, 32, 100, 117, 32, 127757]"
 /*:
- #  The Collections in the String
- 
- A string is not itself a collection. Instead, it has properties that present its contents as meaningful collections. Each of these collections is a particular type of view of the string’s visible and data representation.
+ #  UTF-16 View
+ A string’s utf16 property is a collection of UTF-16 code units, the 16-bit encoding form of the string’s Unicode scalar values. Each code unit is stored as a UInt16 instance.
  */
-
+print(cafe.utf16.count)
+// Prints "11"
+print(Array(cafe.utf16))
+// Prints "[67, 97, 102, 101, 769, 32, 100, 117, 32, 55356, 57101]"
 
 /*:
  #  The Collections in the String
