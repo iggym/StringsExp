@@ -40,9 +40,22 @@ print(cafe.utf16.count)
 // Prints "11"
 print(Array(cafe.utf16))
 // Prints "[67, 97, 102, 101, 769, 32, 100, 117, 32, 55356, 57101]"
+let nscafe = cafe as NSString
+print(nscafe.length)
+// Prints "11"
+print(nscafe.character(at: 3))
+// Prints "101"
+
 
 /*:
- #  The Collections in the String
- 
- A string is not itself a collection. Instead, it has properties that present its contents as meaningful collections. Each of these collections is a particular type of view of the string’s visible and data representation.
- */
+ #  UTF-8 View
+ A string’s utf8 property is a collection of UTF-8 code units, the 8-bit encoding form of the string’s Unicode scalar values. Each code unit is stored as a UInt8 instance.
+*/
+print(cafe.utf8.count)
+// Prints "14"
+print(Array(cafe.utf8))
+// Prints "[67, 97, 102, 101, 204, 129, 32, 100, 117, 32, 240, 159, 140, 141]"
+    
+let cLength = strlen(cafe)
+print(cLength)
+// Prints "14"
