@@ -15,3 +15,17 @@ print(capitalA.utf16.count)
 // Prints "1"
 print(capitalA.utf8.count)
 // Prints "1"
+/*:
+ On the other hand, an emoji flag character is constructed from a pair of Unicode scalars values, like "\u{1F1F5}" and "\u{1F1F7}". Each of these scalar values, in turn, is too large to fit into a single UTF-16 or UTF-8 code unit. As a result, each view of the string "🇵🇷" reports a different length.
+ */
+
+
+let flag = "🇵🇷"
+print(flag.characters.count)
+// Prints "1"
+print(flag.unicodeScalars.count)
+// Prints "2"
+print(flag.utf16.count)
+// Prints "4"
+print(flag.utf8.count)
+// Prints "8"
