@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Accessing String View Elements.playground">
+   </FileRef>
+   <FileRef
       location = "group:Counting the Length of a String.playground">
    </FileRef>
    <FileRef
