@@ -20,3 +20,5 @@ for char in "👩‍👩‍👧‍👦".characters {
 
 print("👩‍👩‍👧‍👦".characters.count)     // 4
 print("👩‍👩‍👧‍👦".unicodeScalars.count) // 7
+
+"👩‍👩‍👧‍👦".characters.forEach { print($0) }
