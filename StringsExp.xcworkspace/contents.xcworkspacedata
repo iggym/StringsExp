@@ -2,13 +2,10 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:Accessing String View Elements.playground">
-   </FileRef>
-   <FileRef
-      location = "group:Counting the Length of a String.playground">
-   </FileRef>
-   <FileRef
       location = "group:Overview.md">
+   </FileRef>
+   <FileRef
+      location = "group:MyPlayground.playground">
    </FileRef>
    <FileRef
       location = "group:Overview.playground">
@@ -17,10 +14,16 @@
       location = "group:Representing Strings- Views.playground">
    </FileRef>
    <FileRef
+      location = "group:Modifying.playground">
+   </FileRef>
+   <FileRef
       location = "group:Comparing.playground">
    </FileRef>
    <FileRef
-      location = "group:Modifying.playground">
+      location = "group:Accessing String View Elements.playground">
+   </FileRef>
+   <FileRef
+      location = "group:Counting the Length of a String.playground">
    </FileRef>
    <FileRef
       location = "group:/Users/iggy/workspace/_clrepos/StringsExp_Fakebook/Creating.playground">
